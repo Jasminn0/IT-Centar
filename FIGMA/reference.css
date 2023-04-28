@@ -1,0 +1,91 @@
+div.mainImageContainer {
+  width: 100%;
+  height: 74vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://maribor24.si/wp-content/uploads/2019/07/spomenik-nob.jpg);
+  background-size: cover;
+  background-position: 100% 50%;
+ margin-bottom: 7%;
+}
+
+.mainImageContainer h1 {
+  font-size: 9.5rem;
+  color: white;
+}
+.highBuildings {
+  position: relative;
+  right: 0;
+}
+
+div.highBuildings h1 {
+  font-size: 11rem;
+  color: white;
+  height: 10vh;
+  width: 68%;
+  background-color: var(--header);
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 30%;
+  padding-inline: 1%;
+}
+
+div.highBuildings h1::after {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 2%;
+    background-color: white;
+    left: 35%;
+}
+
+.highBuildingsImages {
+    position: relative;
+    height: 200vh;
+    width: 100%;
+    padding-top: 4%;
+}
+
+.highBuildingsImages img {
+    position: absolute;
+    object-fit: cover;
+}
+
+.highBuildingsImages img:first-of-type {
+    width: 42%;
+    height: 100vh;
+    right:5%;
+    top: 5%;
+}
+
+.highBuildingsImages img:nth-of-type(2) {
+    top: calc(5% + 10vh);
+    left: 5%;
+    width: 42%;
+    height: 90vh;
+}
+
+.highBuildingsImages img:nth-of-type(3) {
+    width: 50%;
+    height: 80vh;
+    left: 5%;
+    bottom: 5%;
+}
+
+.highBuildingsImages img:nth-of-type(4) {
+    width: 34%;
+    height: 80vh;
+    right: 5%;
+    bottom: 2%;
+}
+
+@media only screen and (max-width:1200px) {
+
+  div.highBuildings h1::after {
+    width: 54%;
+    left:46%;
+}
+
+}

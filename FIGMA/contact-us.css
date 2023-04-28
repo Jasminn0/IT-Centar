@@ -1,0 +1,240 @@
+div.mainImageContainer {
+    width: 100%;
+    height: 68vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/suma.png);
+    background-size: cover;
+}
+
+.mainImageContainer h1 {
+    font-size: 9.5rem;
+    color: white;
+} 
+
+.iconsContainerMain {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.iconsContainer {
+    width: 22%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.iconBox {
+    width: 24%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header);
+    border-radius: 16px;
+}
+
+.iconsInfo {
+    width: 76%;
+}
+
+.iconsContainer i {
+    font-size: 12rem;
+    color: white;
+}
+
+.iconsContainer h1 {
+    font-size:7rem;
+    color: var(--header);
+    margin: 5% 0 0 10% ;
+}
+
+.iconsContainer p {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-left: 10%;
+    color: #4D4D4D;
+}
+
+.writeHeading {
+    padding-left: 17%;
+}
+
+.writeHeading h1{
+    font-size: 10rem;
+    color: var(--header);
+    position: relative;
+}
+
+.writeHeading h1::after {
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 3%;
+    background-color: #5A5858;
+    top: 100%;
+    left: 0;
+}
+
+form.mainForm {
+    width:66%;
+    height: 58vh;
+    margin: auto;
+    padding-top: 2%;
+}
+
+.mainForm input {
+    width: 45%;
+    height: 12%;
+    border-radius: 20px;
+    border: 2px solid #359A91;
+    outline: none;
+    padding-left:3%;
+    box-sizing: border-box;
+    font-size: 6rem;
+}
+
+.mainForm input:first-of-type {
+    margin-right:8%;
+}
+
+.mainForm ::placeholder {
+    color: #3F6D69;
+}
+
+.mainForm textarea {
+    width: 100%;
+    height: 80%;
+    margin-top: 2%;
+    resize: none;
+    border-radius: 20px;
+    padding: 2% 0 0 3%;
+    box-sizing: border-box;
+    font-size: 6rem;
+    outline: none;
+    border: 2px solid #359A91;
+}
+
+.mainForm input:focus, 
+.mainForm textarea:focus {
+    box-shadow: 7px 7px 20px #359A91;
+}
+
+.officesLocations {
+    width: 56%;
+    height: 20vh;
+    margin: auto;
+    padding-inline:2% ;
+}
+
+.officesLocations h1 {
+    font-size: 7rem;
+    text-align: center;
+    color: var(--header);
+    position: relative;
+}
+
+.officesLocations h1::after {
+    content: "";
+    position: absolute;
+    width: 12%;
+    height: 16%;
+    background-color: #4D4D4D;
+    top: 116%;
+    left: 34%;
+}
+
+.officesLocations p {
+    font-size: 5.5rem;
+}
+
+.otherLocationsCards {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+.locationsCards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 10%;
+  }
+  
+  .locations {
+    width: 20%;
+    height: 70%;
+    box-shadow: 2px 5px 10px rgb(144, 142, 142);
+    box-sizing: border-box;
+    padding: 2%;
+  }
+  
+  .locations h3 {
+    color: var(--header);
+    font-size: 8rem;
+    margin: 0;
+  }
+  
+  .locations p {
+    font-size: 5rem;
+  }
+
+  .mapContainer {
+    height: 86vh;
+    width: 100%;
+  }
+
+  .mapContainer iframe {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  @media only screen and (max-width:1200px) {
+    .iconBox {
+        width:30% ;
+    }
+    .iconsContainer {
+        width: 26%;
+        transform: translateX(14%);
+    }
+  }
+
+  @media only screen and (max-width:1070px) {
+
+    .officesLocations h1::after {
+        left: 29%;
+    }
+ 
+    /* .locationsCards {
+        flex-wrap: wrap;
+    }
+
+    .locations {
+       width: 27%;
+       height:60%;
+    } */
+
+  }
+  
+  @media only screen and (max-width:990px) {
+
+    .mainForm input {
+        width: 100%;
+        margin-bottom:2% ;
+    }
+
+    .mainForm textarea {
+        margin-top: 0;
+        height: 70%;
+    }
+  }
+  

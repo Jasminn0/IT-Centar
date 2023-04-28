@@ -1,0 +1,115 @@
+div.mainImageContainer {
+    width: 100%;
+    height: 74vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./img/quarryPage.png);
+    background-size: cover;
+}
+
+.mainImageContainer h1 {
+    font-size: 9.5rem;
+    color: white;
+} 
+
+div.cezlak, 
+div.lesnoBrdo {
+    height: 70vh;
+    width: 50%;
+    background-color: var(--header);
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: white;
+    margin-block: 5%;
+}
+
+div.cezlak {
+    left: 45%;
+    padding: 5% 5% 5% 14%;
+}
+
+div.lesnoBrdo {
+    left: 10%;
+    padding: 5% 9% 5% 5%;
+}
+
+div.lesnoBrdo img {
+    width:80% ;
+    height: 80%;
+    object-fit: cover;
+}
+
+div.cezlak img {
+    position: absolute;
+    left: -64%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    width: 80%;
+}
+
+div.lesnoBrdo img {
+    position: absolute;
+    right: -64%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.cezlak h1,
+div.lesnoBrdo h1,
+div.podpec h1 {
+    font-size: 14rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+div.cezlak p, 
+div.lesnoBrdo p,
+div.popec h1 {
+    font-size: 6rem;
+}
+
+div.podpec {
+    position: relative;
+    margin-block: 10% 2%;
+}
+
+div.podpec img {
+    width: 50%;
+    height: 110vh;
+    object-fit: cover;
+    object-position: 19% 100%;
+    position: relative;
+    left: 45%;
+}
+
+div.podpec h1 {
+    position: absolute;
+    background-color: var(--header);
+    padding-block: 1%;
+    padding-inline: 3%;
+    box-sizing: border-box;
+    color: white;
+    top: -8%;
+    right:38% ;
+    z-index: 1;
+    font-weight: 400;
+}
+
+@media only screen and (max-width:1200px) {
+
+    div.cezlak h1,
+div.lesnoBrdo h1 {
+    font-size: 13rem;
+}
+
+div.cezlak p, 
+div.lesnoBrdo p  {
+    font-size: 5.8rem;
+}
+    
+}

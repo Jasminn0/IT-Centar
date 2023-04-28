@@ -1,0 +1,48 @@
+div.mainImageContainer {
+  width: 100%;
+  height: 84vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./img/meterials.png);
+  background-size: cover;
+}
+
+.mainImageContainer h1 {
+  font-size: 9.5rem;
+  color: white;
+}
+
+.materialsContainer {
+  width: 90%;
+  margin: auto;
+  height: 40vh;
+  padding-block: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+.materials {
+  height: 80%;
+  width: 22%;
+}
+
+.materials img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  width: 100%;
+  height: 90%;
+  box-shadow: 12px 12px 20px 8px #d2d2d2;
+  border: 2px solid #3f6d69;
+}
+
+.materials h1 {
+  margin: 0;
+  font-size: 6rem;
+  text-align: center;
+  color: var(--header);
+}
